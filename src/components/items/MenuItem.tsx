@@ -7,7 +7,7 @@ interface MenuItemProps {
 
 const MenuItem = ({ menu: { icon: Icon, path, title } }: MenuItemProps) => {
   return (
-    <Link className='flex gap-4 mb-4' to={path}>
+    <Link className='w-[268px] flex gap-4 mb-4' to={path}>
       <button>
         <Icon size={28} />
       </button>

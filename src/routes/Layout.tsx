@@ -6,7 +6,7 @@ const Layout = () => {
     <>
       <div className='flex'>
         <Nav />
-        <main className='w-full p-4'>
+        <main className='p-4'>
           <Outlet />
         </main>
       </div>

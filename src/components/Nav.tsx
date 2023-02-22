@@ -19,11 +19,12 @@ const Nav = () => {
           <AiOutlineSetting size={28} />
         </button>
       </div>
-      <div className='w-[268px]'>
-        {menus.map(menu => (
-          <MenuItem key={menu.title} menu={menu} />
-        ))}
-      </div>
+
+      {menus.map(menu => (
+        <MenuItem key={menu.title} menu={menu} />
+      ))}
+
+      <div className='h-0.5 bg-gray-700' />
     </nav>
   );
 };
