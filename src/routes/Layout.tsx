@@ -1,11 +1,15 @@
 import { Outlet } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '../store/hooks';
-import { toggleModal } from '../store/slices/modal';
+import Nav from '../components/Nav';
 
 const Layout = () => {
   return (
     <>
-      <Outlet />
+      <div className='flex'>
+        <Nav />
+        <main className='w-full p-4'>
+          <Outlet />
+        </main>
+      </div>
     </>
   );
 };
