@@ -12,8 +12,8 @@ const Nav = () => {
   return (
     <nav className={`bg-gray-300 h-screen transition-[0.3s] rounded-r-xl ${modal ? 'w-[300px]' : 'w-[60px]'} p-4 overflow-x-hidden`}>
       <div className='flex w-[268px] justify-between mb-8'>
-        <button onClick={() => dispatch(toggleModal())}>
-          <FiMenu size={28} />
+        <button className={`rounded-xl p-1 ${modal ? 'bg-gray-400' : 'bg-gray-300'}`} onClick={() => dispatch(toggleModal())}>
+          <FiMenu size={20} />
         </button>
         <button>
           <AiOutlineSetting size={28} />
