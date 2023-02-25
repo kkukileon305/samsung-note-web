@@ -9,7 +9,7 @@ const All = () => {
       <ul className='flex gap-4 flex-wrap mt-4'>
         {notes.map(note => (
           <li key={note.key} className=''>
-            <Link className='w-32 aspect-[13/16] flex justify-center items-center bg-gray-400 rounded-xl' to={`/note/${note.key}`}>
+            <Link className='w-32 shadow-lg shadow-black/20 aspect-[13/16] flex justify-center items-center bg-gray-400 rounded-xl' to={`/note/${note.key}`}>
               {note.title}
             </Link>
           </li>

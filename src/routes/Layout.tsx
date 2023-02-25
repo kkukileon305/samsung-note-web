@@ -1,4 +1,5 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom';
+import PostBtn from '../components/PostBtn';
 import Nav from '../components/Nav';
 import { useAppSelector } from '../store/hooks';
 
@@ -12,6 +13,7 @@ const Layout = () => {
           <Outlet />
         </main>
       </div>
+      <PostBtn />
     </>
   );
 };
